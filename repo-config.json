@@ -6,7 +6,7 @@
     "enableReachability": true,
     "exploitability": true,
     "baseBranches": [],
-    "releaseBranches": ["v.*]"
+    "releaseBranches": ["v.*"]
   },
   "scanSettingsSAST": {
     "enableScan": true,
