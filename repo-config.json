@@ -4,7 +4,9 @@
     "configExternalURL": "",
     "enableLicenseViolations": true,
     "enableReachability": true,
-    "baseBranches": []
+    "exploitability": true,
+    "baseBranches": [],
+    "releaseBranches": ["v.*]"
   },
   "scanSettingsSAST": {
     "enableScan": true,
@@ -17,7 +19,12 @@
     "vulnerableCheckRunConclusionLevel": "failure",
     "displayMode": "diff",
     "useMendCheckNames": true,
-    "strictMode": "warning"
+    "strictMode": "failure"
+  },
+  "releaseBranchSettings": {
+    "checkRunSettings.failOnLicenseViolation": true,
+    "checkRunSettings.strictMode": "failure",
+    "checkRunSettings.failOnVulnerabilityMinCvss": 9.0
   },
   "checkRunSettingsSAST": {
     "checkRunConclusionLevel": "failure",
