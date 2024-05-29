@@ -1,0 +1,13 @@
+{
+    "remediateSettings": {
+        "workflowRules": {
+            "enabled": false
+        },
+        "enableRenovate": true,
+        "extends": [
+            "config:recommended",
+            "mergeConfidence:all-badges",
+            "local>whitesource-config/whitesource-config:smart-merge"
+        ]
+    }
+}
