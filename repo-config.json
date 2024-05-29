@@ -42,7 +42,7 @@
     "extends": [
       "config:recommended",
       "mergeConfidence:all-badges",
-      "local>whitesource-config/whitesource-config:smart-merge"
+      "github>GarySegal-MendDemocorp/whitesource-config:smart-merge"
       ]
   },
   "imageSettings": {
