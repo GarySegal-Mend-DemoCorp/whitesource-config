@@ -5,6 +5,7 @@
     "enableLicenseViolations": true,
     "enableReachability": true,
     "exploitability": true,
+    "enableIaC" : true,
     "baseBranches": [],
     "releaseBranches": ["v.*"]
   },
