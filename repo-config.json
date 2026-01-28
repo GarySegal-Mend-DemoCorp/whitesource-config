@@ -1,58 +1,29 @@
-{ 
-  "scanSettings": {
-    "configMode": "AUTO",
-    "configExternalURL": "",
-    "enableLicenseViolations": true,
-    "enableReachability": true,
-    "exploitability": true,
-    "enableIaC" : true,
-    "baseBranches": [],
-    "releaseBranches": ["v.*"]
-  },
-  "scanSettingsSAST": {
-    "enableScan": true,
-    "enableRemediation": true,
-    "scanPullRequests": true,
-    "incrementalScan": true,
-    "baseBranches": [],
-    "snippetSize": 10,
-    "findingSuppressions": "requireApproval"
+{
+    "scanSettings": {
+    "enableLicenseViolations": "false",
+    "repoNameSync": true
   },
   "checkRunSettings": {
-    "vulnerableCheckRunConclusionLevel": "failure",
+    "vulnerableCheckRunConclusionLevel": "NONE",
     "displayMode": "diff",
-    "useMendCheckNames": true,
-    "strictMode": "failure"
-  },
-  "releaseBranchSettings": {
-    "checkRunSettings.failOnLicenseViolation": true,
-    "checkRunSettings.strictMode": "failure",
-    "checkRunSettings.failOnVulnerabilityMinCvss": 9.0
-  },
-  "checkRunSettingsSAST": {
-    "checkRunConclusionLevel": "failure",
-    "severityThreshold": "high"
+    "showWsInfo": "true"
   },
   "issueSettings": {
-    "minSeverityLevel": "LOW",
-    "issueType": "DEPENDENCY"
+    "minSeverityLevel": "NONE"
   },
-  "remediateSettings": {
-    "workflowRules": {
-      "enabled": false
+    "scanSettingsSAST": {
+      "enableScan": true,
+        "enableRemediation": false,
+        "scanPullRequests": false,
+        "incrementalScan": false,
+        "baseBranches": [],
+        "snippetSize": 10,
+        "enableSecretsScan": true
     },
-    "enableRenovate": true,
-    "extends": [
-      "config:recommended",
-      "mergeConfidence:all-badges",
-      "github>GarySegal-Mend-Democorp/whitesource-config:smart-merge"
-      ]
-  },
-  "imageSettings": {
-    "imageTracing": {
-        "enableImageTracingPR": true,
-        "addDockerfilePath": true,
-        "addRepositoryCoordinates": true
+    "checkRunSettingsSAST": {
+      "checkRunConclusionLevel": "none"
+    },
+    "issueSettingsSAST": {
+      "issueType": "none"
     }
   }
-}
